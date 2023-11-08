@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "da23a07c-3a0b-4fba-884e-77a9ef27f24e",
+		"name": "auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8270206",
+		"_collection_link": "https://planetary-crescent-131321.postman.co/workspace/DAZN~77ce15b0-ad86-4363-9f78-d404d8be326f/collection/8270206-da23a07c-3a0b-4fba-884e-77a9ef27f24e?action=share&source=collection_link&creator=8270206"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"ramesh\",\n    \"lastName\":\"dazn\",\n    \"email\":\"admin@gmail.com\",\n    \"password\":\"test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiI2NTRiNjMzNTM1MTk0M2FhNGYyMGExMWUiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9LCJpYXQiOjE2OTk0Mzk5NjEsImV4cCI6MTY5OTYxOTk2MSwidHlwZSI6IkFDQ0VTUyJ9.B4b4R-M-8rLdQLMfyB__2k8K7S3j8oCdnmbuq9yOhtg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"admin@gmail.com\",\n    \"password\":\"test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
